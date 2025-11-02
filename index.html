@@ -48,6 +48,9 @@
   .button-v1 {
     background-color: #4CAF50; /* Green */
   }
+  .button-v2 {
+    background-color: #008CBA; /* Blue */
+  }
   .button-download {
     background-color: #555555; /* Gray */
   }
@@ -69,9 +72,16 @@
   <p>Connect your ESP32 to your computer with a USB cable, then click the button for the desired firmware version to install. You must use a compatible browser like Google Chrome or Microsoft Edge.</p>
   <p class="important-note">Please use ESP32 CYD 2.8 inches board only</p>
 
-  <!-- Button for the firmware version -->
+  <!-- Button for the first firmware version -->
   <esp-web-install-button manifest="manifest.json">
-    <button slot="activate" class="button button-v1">Install yoRadio</button>
+    <button slot="activate" class="button button-v1">Install yoRadio ST7789</button>
+  </esp-web-install-button>
+
+  <br>
+
+  <!-- Button for the second firmware version -->
+  <esp-web-install-button manifest="manifest2.json">
+    <button slot="activate" class="button button-v2">Install yoRadio ILI93541</button>
   </esp-web-install-button>
 
   <p>
